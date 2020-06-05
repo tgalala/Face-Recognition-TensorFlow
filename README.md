@@ -16,6 +16,7 @@ In this projectt, we will present the methods and tools used to build a face rec
 <b>libraries</b><br>
 1- MTCNN for face detection <br>
 2- TensorFlow for face recognition <br>
+3- OpenCV
 3- VGG Face pretrained VGG16 model <br>
 4- Scikit-learn for face recognition (classification) with  Support Vector Machine (SVM) &  Logisitc Regression (LR) <br>
 5- SURF and SIFT features represented as bag-of-visual features <br>
