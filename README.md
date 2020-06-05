@@ -52,3 +52,7 @@ Example running script on command line: <br>
 	3- output is the input image with a labelled green bounding box on faces with the predicted class. Also a report is printed with matrix P with 3 columns that includes the class predicted and face center points x & y coordinates. <br>
 
 
+<br><center>
+<img src="https://raw.githubusercontent.com/tgalala/Full-pipeline-face-recognition-python/master/images/face.png" >
+</center>
+
