@@ -7,39 +7,40 @@ Python
 In this projectt, we will present the methods and tools used to build a face recognition pipeline to recognize faces for a classroom. In addition to using several combinations of SURF, SIFT, SVM & LR, we will use a VGG16 convolutional neural network-based architecture pre-trained on VGG-Face dataset and fine-tuned on our custom face dataset. In addition, we will use three face filters.
 
 <b>Installation</b><br>
-1- conda create -n cv python=3.6 <br>
-2- proceed y  <br>
-3- activate cv  <br>
-4- navigate to my folder where requirments.txt is located (inside submission folder)  <br>
-5- pip install -r requirements.txt  <br>
+	1- conda create -n cv python=3.6 <br>
+	2- proceed y  <br>
+	3- activate cv  <br>
+	4- navigate to my folder where requirments.txt is located (inside submission folder)  <br>
+	5- pip install -r requirements.txt  <br>
 
 <b>Notes</b><br>
-1- This project needs a custom dataset. Original dataset will not be suppplied for privacy issues.  <br>
-2- Create a folder dataset with extracted face images of your custom dataset. <br>
-3- Split the custom dataset into train and validation. <br>
-4- Run ML Classifier Training file and create SIFT & SURF vocabularies and put it in vocalublary folder & put the pkl files in the models folder. <br>
-5- Run Vgg16 file and put the saved models (modelVGG2.yaml & modelVGG2.h5) in the models folder., <br>
-6- Run the main file FaceRecognition file (Details in usage section) <br>
+	1- This project needs a custom dataset. Original dataset will not be suppplied for privacy issues.  <br>
+	2- Create a folder dataset with extracted face images of your custom dataset. <br>
+	3- Split the custom dataset into train and validation. <br>
+	4- Batch MTCNN & image Augmentation.IPYNB uses MTCNN to batch extract faces from images. <br>
+	5- Run ML Classifier Training file and create SIFT & SURF vocabularies and put it in vocalublary folder & put the pkl files in the models folder. <br>
+	6- Run Vgg16 file and put the saved models (modelVGG2.yaml & modelVGG2.h5) in the models folder. <br>
+	7- Run the main file FaceRecognition file (Details in usage section) <br>
 
 <b>Files</b><br>
-   1- MTCNN folder (The face detector) <br>
-   2- models folder	 (You need to create this folder)<br>
-   3- vocabulary folder (You need to create this folder)<br>
-   4- test folder (You need to create this folder) <br>
-   5- filters folder (filters png images used for creative mode) <br>
-   6- Batch MTCNN & image Augmentation.IPYNB <br>
-   7- ML Classifier Training.IPYNB  <br>
-   9- Vgg16.IPYNB <br>
-  10- RecogniseFace.py (Our main function) <br>
-  11- utilities.py (Required functions for the RecogniseFace main function) <br>
+	1- MTCNN folder (The face detector) <br>
+	2- models folder	 (You need to create this folder)<br>
+	3- vocabulary folder (You need to create this folder)<br>
+	4- test folder (You need to create this folder) <br>
+	5- filters folder (filters png images used for creative mode) <br>
+	6- Batch MTCNN & image Augmentation.IPYNB <br>
+	7- ML Classifier Training.IPYNB  <br>
+	8- Vgg16.IPYNB <br>
+	9- RecogniseFace.py (Our main function) <br>
+	10- utilities.py (Required functions for the RecogniseFace main function) <br>
 
 
 <b>Running Script</b><br>	
 Below we are displaying the arguments and possible combinations for our function RecogniseFace.py: <br>
-Argument 1: image path <br>
-Argument 2: featureType   = (NONE, SURF, SIFT)  <br>
-Argument 3: classifierType = (SVM, LR, VGG16)  <br>
-Argument 4: creativeMode (Face Filters) = (0 = None, 1 = Anonymity , 2 = Cool Glasses, 3 = Funny eyes)  <br>
+	Argument 1: image path <br>
+	Argument 2: featureType   = (NONE, SURF, SIFT)  <br>
+	Argument 3: classifierType = (SVM, LR, VGG16)  <br>
+	Argument 4: creativeMode (Face Filters) = (0 = None, 1 = Anonymity , 2 = Cool Glasses, 3 = Funny eyes)  <br>
 
 <b>Usage</b><br>
 Function can be run in command line example Anaconda Prompt or from Jupyter <br>
