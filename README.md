@@ -14,11 +14,11 @@ In this projectt, we will present the methods and tools used to build a face rec
 	5- pip install -r requirements.txt  <br>
 
 <b>libraries</b><br>
-1- MTCNN for face detection
-2- TensorFlow for face recognition
-3- VGG Face pretrained VGG16 model
-4- Scikit-learn for face recognition (classification) with  Support Vector Machine (SVM) &  Logisitc Regression (LR)
-5- SURF and SIFT features represented as bag-of-visual features
+1- MTCNN for face detection <br>
+2- TensorFlow for face recognition <br>
+3- VGG Face pretrained VGG16 model <br>
+4- Scikit-learn for face recognition (classification) with  Support Vector Machine (SVM) &  Logisitc Regression (LR) <br>
+5- SURF and SIFT features represented as bag-of-visual features <br>
 
 <b>Notes</b><br>
 	1- This project needs a custom dataset. For privacy reason the created dataset is not included in this repository.  <br>
