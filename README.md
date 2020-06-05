@@ -1,4 +1,4 @@
-# Face Recognition (Custom Dataset) on images
+# Face Recognition (Custom Dataset) using TensorFlow
 
 <b>Language</b><br>
 Python
